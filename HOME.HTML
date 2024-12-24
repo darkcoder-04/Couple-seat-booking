@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couple Seat Booking</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+/* Set the background of the page with a gradient */
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient from purple to blue */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+/* Styling for the container holding the buttons */
+.button-container {
+    text-align: center;
+}
+
+/* Styling for the buttons */
+.custom-btn {
+    background-color: #2575fc;
+    color: white;
+    border: 2px solid #2575fc;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Hover effect for the button */
+.custom-btn:hover {
+    background-color: white;
+    color: #2575fc;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Button Container */
+@media (max-width: 768px) {
+    .button-container {
+        padding: 20px;
+    }
+
+    .custom-btn {
+        width: 80%;
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+}
+
+/* Back button styling */
+.back-btn {
+    background-color: #636e72;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for back button */
+.back-btn:hover {
+    background-color: #b2bec3;
+}
+</style>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="button-container text-center">
+            <h1 class="text-light">Welcome to the Bus Booking System</h1>
+            <div class="button-group mt-5">
+                <!-- Book a Couple Seat - Link to another page -->
+                <a href="BOOK.PHP" class="btn custom-btn mb-3" id="book-couple-seat">Book a Couple Seat</a>
+                <br>
+                
+                <!-- Back button -->
+                <a href="LOGIN.PHP" class="back-btn">← Go Back</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
